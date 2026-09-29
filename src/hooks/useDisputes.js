@@ -1,3 +1,12 @@
+import React, { useState, useEffect } from 'react';
+import { useDisputes } from '../hooks/useDisputes';
+
+export function DisputeTable() {
+  const { disputes, loading } = useDisputes();
+
+  // ... rest of your component code
+}
+
 export function useDisputes() {
   // dummy data for now so build passes
   return {

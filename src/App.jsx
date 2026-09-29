@@ -1,19 +1,16 @@
-import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import DisputeTable from "./components/DisputeTable";
-import "./App.css"
-function App() {
-  const [email] = useState("test@example.com");
-  const [amount] = useState(500);
 
-  const highRisk = isHighRisk(email, amount);
-
+export default function App() {
   return (
-    <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
-      <h1>Veribound App</h1>
-      {highRisk && <p style={{ color: "red" }}>High Risk Detected!</p>}
-      <DisputeTable />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DisputeTable />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App
