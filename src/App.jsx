@@ -7,7 +7,12 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<DisputeTable />} />
+        <Route path="/" element={
+          <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
+            <h1>Veribound App</h1>
+            <DisputeTable />
+          </div>
+        } />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
       </Routes>
