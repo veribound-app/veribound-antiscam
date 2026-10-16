@@ -1,22 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Privacy from "./pages/Privacy.jsx";
+import Privacy from "./pages/privacy.jsx";
 import Terms from "./pages/Terms.jsx";
-import Terms from "./pages/Terms";
 import DisputeTable from "./components/DisputeTable";
+import Header from "./components/Header";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={
-          <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
-            <h1>Veribound App</h1>
-            <DisputeTable />
-          </div>
-        } />
+        <Route path="/" element={<><Header /><DisputeTable /></>} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
+export default App;

@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0a0a0a;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
