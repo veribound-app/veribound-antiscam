@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Privacy from "./pages/Privacy.jsx";
-import { Terms } from './components/';
 import Terms from './pages/Terms';
 import DisputeTable from "./components/DisputeTable";
 
