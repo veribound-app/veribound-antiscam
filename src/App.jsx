@@ -1,8 +1,9 @@
-echo 'import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Privacy from "./pages/privacy.jsx";
 import Terms from "./pages/Terms.jsx";
 import DisputeTable from "./components/DisputeTable";
 import Header from "./components/Header";
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,4 +15,5 @@ function App() {
     </BrowserRouter>
   );
 }
-export default App;' > src/App.jsx
+
+export default App;
