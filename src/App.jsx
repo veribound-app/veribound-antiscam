@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Privacy from "./pages/Privacy.jsx";
-import Terms from './pages/Terms';
+jlimport Terms from './pages/Terms';
 import DisputeTable from "./components/DisputeTable";
 
 export default function App() {
