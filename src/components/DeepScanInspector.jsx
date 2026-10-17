@@ -8,7 +8,7 @@ export function DeepScanInspector({
 }) {
   return (
     <div className="bg-white shadow-md rounded-xl border border-red-200 overflow-hidden">
-      {/* Header */}
+      
       <div className="bg-red-50 px-6 py-4 border-b border-red-100 flex justify-between items-center">
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-red-600 bg-red-100 px-2 py-0.5 rounded">
